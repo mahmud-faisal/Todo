@@ -1,0 +1,17 @@
+.appWrapper{
+    width: 600px;
+    min-height: 100vh;
+}
+
+.appContent{
+    width: 100%;   
+}
+
+.newTodoWrapper{
+    width: 90%;
+    background-color: rgb(168, 170, 24);
+}
+
+.todoWrapper{
+    width: 90%;
+}
