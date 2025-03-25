@@ -7,12 +7,12 @@ import '../CSS/todo.css'
 
 export default function Todo(props) {
   // console.log(props.task)
-  const {title,desc}=props.task.datas;
-  const {id} = props.task;
+  const {title,desc,_id}=props.task;
+ 
 
 
   const handleDelete = () =>{
-    props.onRemoveTodo(id);
+    props.onRemoveTodo(_id);
   }
   
   if(title != '' || desc != '')
@@ -26,4 +26,5 @@ export default function Todo(props) {
        <Button className='btn-danger' onClick={handleDelete} ><FontAwesomeIcon icon={faTrashCan} /></Button>
     </section>
   )
+  return null;
 }
