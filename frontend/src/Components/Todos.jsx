@@ -9,7 +9,7 @@ export default function Todos(props) {
   return (
     <div className='tasksBody'>
     {todos.map((todo)=>
-        <Todo task={todo} key={todo._id} onRemoveTodo ={props.onRemoveTodo}/>
+        <Todo task={todo} key={todo._id} onRemoveTodo ={props.onRemoveTodo }/>
     )
   }
     </div>

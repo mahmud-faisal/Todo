@@ -31,23 +31,19 @@ try {
 })
 
 //  Delete Todo
-router.delete('/:id',async(req,res)=>{
-    console.log('Checeking:');
+router.delete('/:id', async (req, res) => {
     try {
         const todo = await Todo.findById(req.params.id);
-        if(!todo)return res.status(404).json({
-            message: "Todo not found"
-        });
-        await todo.remove();
-        res.json({message: "Todo deleted"});
+        if (!todo) return res.status(404).json({ message: "Todo not found" });
+
+        await Todo.findByIdAndDelete(req.params.id);
+        res.json({ message: "Todo deleted" });
+    } catch (error) {
+        console.log('Error in delete route:', error.message);
+        res.status(500).json({ message: error.message });
     }
-     catch (error) {
-        res.status(500).json({
-            message: error.message
-        })
-        
-    }
-})
+});
+
 
 
 module.exports = router;
