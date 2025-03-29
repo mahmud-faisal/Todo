@@ -65,8 +65,8 @@ export const NewTodo = ({onTaskAdded}) => {
           required
         />
       </div>
-      <div className="flex w-full justify-between flex-wrap flex-col md:flex-row">
-        <div className="w-full md:w-1/2">
+      <div className="flex w-full justify-between  flex-col md:flex-row">
+        <div className="w-full md:w-4/5">
           <label htmlFor="date" className='mr-4 font-semibold'>Date</label>
           <input 
             type="date" 
@@ -74,11 +74,11 @@ export const NewTodo = ({onTaskAdded}) => {
             id="date" 
             value={formData.date} 
             onChange={handleOnChange}
-            className='p-2 border-2 rounded w-full'
+            className='p-2 border-2 rounded '
             required
           />
         </div>
-        <div className="w-full md:w-1/2 my-2 md:my-0">
+        <div className="w-full md:w-4/5 my-2 md:my-0">
           <label htmlFor="time" className='mr-4 font-semibold'>Time</label>
           <input 
             type="time" 
@@ -86,7 +86,7 @@ export const NewTodo = ({onTaskAdded}) => {
             id="time" 
             value={formData.time} 
             onChange={handleOnChange}
-            className='p-2 border-2 rounded w-full'
+            className='p-2 border-2 rounded '
             required
           />
         </div>
