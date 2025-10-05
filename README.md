@@ -13,6 +13,15 @@ A full-stack Todo application built with the MERN stack (MongoDB, Express.js, Re
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Modern UI**: Clean, intuitive interface with Tailwind CSS styling
 
+## 📸 Screenshots
+
+### ✅ Todo App UI - Add Todo
+![Todo App Desktop](https://drive.google.com/uc?export=view&id=1H99XlFpUuPb-CK0NzPesRQ5-WNTzjbPj)
+
+### ✅ Todo App UI - View Todo
+![Todo App Mobile](https://drive.google.com/uc?export=view&id=1MK_HZYshMCLPwHDeotcCdxYeOJBzG3ZI)
+
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -29,7 +38,7 @@ A full-stack Todo application built with the MERN stack (MongoDB, Express.js, Re
 
 ## 📁 Project Structure
 
-
+```
 todo-app/
 ├── client/                 # React frontend
 │   ├── src/
@@ -47,7 +56,7 @@ todo-app/
 │   │   └── todos.js        # API routes
 │   └── ...
 └── README.md
-
+```
 
 ## 🎯 Component Architecture
 
@@ -94,7 +103,7 @@ todo-app/
   createdAt: Date,
   updatedAt: Date
 }
-
+```
 
 ## 🚦 Getting Started
 
